@@ -31,7 +31,7 @@ server <- function(input, output, session) {
     if (!is.na(input$orig_size) & !is.na(input$pixels)) {
       size_inches <- switch(
         input$unit,
-        mm = 0.039 * input$orig_size,
+        mm = 0.0394 * input$orig_size,
         cm = 0.394 * input$orig_size,
         inches = input$orig_size,
         feet = 12 * input$orig_size
